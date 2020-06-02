@@ -1,0 +1,215 @@
+li {
+	list-style-type: none;
+	/* Убираем маркеры */
+}
+
+a {
+	text-decoration: none;
+}
+
+.hide-headers {
+	display: none;
+}
+
+.logo-site {
+	position: absolute;
+	width: 153px;
+	height: 31px;
+	left: 215px;
+	top: 24px;
+
+	font-family: Raleway;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 26px;
+	line-height: 31px;
+	letter-spacing: 0.03em;
+	color: #2196f3;
+	/* Логотип сайта */
+}
+/* Settings A */
+.nav-links .links {
+	color: #212121;
+}
+
+.nav-links .links:hover,
+.nav-links .links:focus {
+	color: #2196f3;
+}
+
+.nav-links .links:active {
+	color: #2196f3;
+}
+
+.nav-links .links:visited {
+	color: #212121;
+}
+
+.nav-studio {
+	position: absolute;
+	width: 49px;
+	height: 16px;
+	left: 453px;
+	top: 32px;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.02em;
+	/* Стили навигации */
+}
+
+.nav-portfolio {
+	position: absolute;
+	width: 77px;
+	height: 16px;
+	left: 552px;
+	top: 32px;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.02em;
+	/* Стили навигации */
+}
+
+.nav-contacts {
+	position: absolute;
+	width: 68px;
+	height: 16px;
+	left: 679px;
+	top: 32px;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.02em;
+	/* Стили навигации */
+}
+
+.e-mail-svg {
+	position: absolute;
+	left: 1057px;
+	top: 36px;
+	/* e-mail SVG */
+}
+
+.e-mail {
+	position: absolute;
+	width: 135px;
+	height: 16px;
+	left: 1078px;
+	top: 32px;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.02em;
+	color: #757575;
+	/* e-mail text */
+}
+
+.phone-svg {
+	position: absolute;
+	left: 1250px;
+	top: 33px;
+	/* phone SVG */
+}
+
+.phone {
+	position: absolute;
+	width: 122px;
+	height: 16px;
+	left: 1263px;
+	top: 32px;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.02em;
+	color: #757575;
+	/* phone text */
+}
+
+.header-img {
+	position: absolute;
+	width: 1600px;
+	height: 600px;
+	left: 0px;
+	top: 81px;
+	background: url(/images/headerimg.png);
+	/* main img */
+}
+
+.img-overlay {
+	position: absolute;
+	width: 1600px;
+	height: 600px;
+	left: 0px;
+	top: 80px;
+	background: rgba(47, 48, 58, 0.8);
+	/* grey overlay on main img */
+}
+
+.main-text {
+	position: absolute;
+	width: 696px;
+	height: 120px;
+	left: 452px;
+	top: 235px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 60px;
+	text-align: center;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: #ffffff;
+	/* text on main img */
+}
+
+.transfer-but {
+	position: absolute;
+	width: 140px;
+	height: 30px;
+	left: 732px;
+	top: 441px;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 30px;
+
+	display: flex;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.06em;
+
+	color: #ffffff;
+	/* button on main img */
+}
+
+.button-overlay {
+	position: absolute;
+	width: 200px;
+	height: 50px;
+	left: 700px;
+	top: 430px;
+
+	background: #2196f3;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	/* overlay for main button */
+}
