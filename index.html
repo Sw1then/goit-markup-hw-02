@@ -3,226 +3,272 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./style/style.css" />
+		<title>Web Studio</title>
 		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet" />
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet" />
-		<title>Web Studio</title>
+		<link rel="stylesheet" href="./style/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
+		/>
 	</head>
-
-	<body>
+	<body class="page">
 		<!-- Шапка сайта -->
 		<header>
 			<!-- Навигация -->
-			<nav>
-				<a href="/"><img class="logo-site" src="images/logo.svg" alt="logo" /></a>
-				<ul class="nav-links">
-					<li>
-						<a class="nav-studio links" href="https://www.league.com">Студия</a>
-					</li>
-					<li>
-						<a class="nav-portfolio links" href="./portfolio.html">Портфолио</a>
-					</li>
-					<li>
-						<a class="nav-contacts links" href="https://www.league.com">Контакты</a>
-					</li>
-				</ul>
-				<address>
-					<img class="e-mail-svg" src="images/mail.svg" alt="mail" />
-					<a class="e-mail" href="mailto:sclyarvlad@yandex.ru">sclyarvlad@yandex.ru</a>
-					<img class="phone-svg" src="images/phone.svg" alt="phone" />
-					<a class="phone" href="tel:+380962553485">+38 096 255 34 85</a>
-				</address>
-			</nav>
+			<div class="container">
+				<nav class="main-nav">
+					<a href="/" class="logo"><img src="images/logo.svg" alt="logo" /></a>
+					<ul class="site-nav">
+						<li class="item">
+							<a href="https://www.league.com" class="link">Студия</a>
+						</li>
+						<li class="item">
+							<a href="./portfolio.html" class="link">Портфолио</a>
+						</li>
+						<li class="item">
+							<a href="https://www.league.com" class="link">Контакты</a>
+						</li>
+					</ul>
+					<address class="contact-nav">
+						<a href="mailto:sclyarvlad@yandex.ru" class="link">sclyarvlad@yandex.ru</a>
+						<a href="tel:+380962553485" class="link">+38 096 255 34 85</a>
+					</address>
+				</nav>
+			</div>
 		</header>
 		<!-- Конец шапки сайта -->
-		<!-- Конец навигации -->
-		<section>
-			<img class="header-img" src="images/headerimg.jpg" alt="headerimg" />
-			<div class="img-overlay"></div>
-			<div class="button-overlay"></div>
-			<a class="transfer-but" href="">Заказать услугу</a>
-			<h1 class="main-text">Эффективные решения для вашего бизнеса</h1>
-		</section>
+		<!-- Заказ услуг -->
 		<main>
-			<!-- Блок обязанностей -->
-			<section>
-				<h2 class="hide-headers">Наши преимущества</h2>
-				<ul>
-					<li>
-						<img src="images/antena.svg" alt="antenna" />
-						<h3>Внимание к деталям</h3>
-						<p>
-							Идейные соображения, а также начало повседневной работы по формированию позиции.
-						</p>
-					</li>
-					<li>
-						<img src="images/clock.svg" alt="clock" />
-						<h3>Пунктуальность</h3>
-						<p>
-							Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
-						</p>
-					</li>
-					<li>
-						<img src="images/diagrama.svg" alt="diagrama" />
-						<h3>Планирование</h3>
-						<p>
-							Равным образом консультация с широким активом в значительной степени обуславливает.
-						</p>
-					</li>
-					<li>
-						<img src="images/astronaut.svg" alt="astronaut" />
-						<h3>Современные технологии</h3>
-						<p>
-							Значимость этих проблем настолько очевидна, что реализация плановых заданий.
-						</p>
-					</li>
-				</ul>
+			<section class="hero">
+				<h1 class="hero-title">
+					Эффективные решения
+					<br />
+					для вашего бизнеса
+				</h1>
+				<a href="" class="button primary">Заказать услугу</a>
 			</section>
-			<!-- Конец блока обязанностей -->
+			<!-- Блок преимуществ -->
+			<section class="section">
+				<div class="container">
+					<h2 class="hide-headers">Наши преимущества</h2>
+					<ul class="features">
+						<li class="item">
+							<div class="img-cont"><img src="images/antena.svg" alt="antenna" /></div>
+							<h3 class="title">Внимание к деталям</h3>
+							<p class="text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+						</li>
+						<li class="item">
+							<div class="img-cont"><img src="images/clock.svg" alt="clock" /></div>
+							<h3 class="title">Пунктуальность</h3>
+							<p class="text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+						</li>
+						<li class="item">
+							<div class="img-cont"><img src="images/diagrama.svg" alt="diagrama" /></div>
+							<h3 class="title">Планирование</h3>
+							<p class="text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+						</li>
+						<li class="item">
+							<div class="img-cont"><img src="images/astronaut.svg" alt="astronaut" /></div>
+							<h3 class="title">Современные технологии</h3>
+							<p class="text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<!-- Конец блока преимуществ -->
 			<!-- Род деятельности -->
-			<section>
-				<h2>Чем мы занимаемся</h2>
-				<ul>
-					<li>
-						<p>Десктопные приложения</p>
-						<a href="#"><img src="images/img.jpg" alt="computer" /></a>
-					</li>
-					<li>
-						<p>Мобильные приложения</p>
-						<a href="#"><img src="images/box.jpg" alt="smartphone" /></a>
-					</li>
-					<li>
-						<p>Дизайнерские решения</p>
-						<a href="#"><img src="images/img2.jpg" alt="monitor" /></a>
-					</li>
-				</ul>
+			<section class="section our-work">
+				<div class="container">
+					<h2 class="section-title">Чем мы занимаемся</h2>
+					<ul class="occupation">
+						<li class="item">
+							<p class="text">Десктопные приложения</p>
+							<a href="#"><img src="images/img.jpg" alt="computer" /></a>
+						</li>
+						<li class="item">
+							<p class="text">Мобильные приложения</p>
+							<a href="#"><img src="images/box.jpg" alt="smartphone" /></a>
+						</li>
+						<li class="item">
+							<p class="text">Дизайнерские решения</p>
+							<a href="#"><img src="images/img2.jpg" alt="monitor" /></a>
+						</li>
+					</ul>
+				</div>
 			</section>
 			<!-- Конец рода деятельности -->
 			<!-- Наша команда -->
-			<section>
-				<h2>Наша команда</h2>
-				<ul>
-					<li>
-						<img src="images/john-smith.jpg" alt="john" />
-						<h3>John Smith</h3>
-						<p>Product Designer</p>
-						<a href="https://www.instagram.com" target="_blank" rel="noopener nofollow noreferrer">
-							<img src="images/instagram.svg" alt="instagram" />
-						</a>
-						<a href="https://twitter.com/" target="_blank" rel="noopener nofollow noreferrer">
-							<img src="images/twitter.svg" alt="twitter" />
-						</a>
-						<a href="https://facebook.com/" target="_blank" rel="noopener nofollow noreferrer">
-							<img src="images/facebook.svg" alt="facebook" />
-						</a>
-						<a href="https://www.linkedin.com/" target="_blank" rel="noopener nofollow noreferrer">
-							<img src="images/linkedin.svg" alt="linkdein" />
-						</a>
-					</li>
-					<li>
-						<img src="images/marta-stewart.jpg" alt="marta" />
-						<h3>Marta Stewart</h3>
-						<p>Frontend Developer</p>
-						<a href="https://www.instagram.com" target="_blank" rel="noopener nofollow noreferrer">
-							<img src="images/instagram.svg" alt="instagram" />
-						</a>
-						<a href="https://twitter.com/" target="_blank" rel="noopener nofollow noreferrer">
-							<img src="images/twitter.svg" alt="twitter" />
-						</a>
-						<a href="https://facebook.com/" target="_blank" rel="noopener nofollow noreferrer">
-							<img src="images/facebook.svg" alt="facebook" rel="noopener nofollow noreferrer" />
-						</a>
-						<a href="https://www.linkedin.com/" target="_blank" rel="noopener nofollow noreferrer">
-							<img src="images/linkedin.svg" alt="linkdein" />
-						</a>
-					</li>
-					<li>
-						<img src="images/robert-jakis.jpg" alt="robert" />
-						<h3>Robert Jakis</h3>
-						<p>Marketing</p>
-						<a href="https://www.instagram.com" target="_blank" rel="noopener nofollow noreferrer">
-							<img src="images/instagram.svg" alt="instagram" />
-						</a>
-						<a href="https://twitter.com/" target="_blank" rel="noopener nofollow noreferrer">
-							<img src="images/twitter.svg" alt="twitter" />
-						</a>
-						<a href="https://facebook.com/" target="_blank" rel="noopener nofollow noreferrer">
-							<img src="images/facebook.svg" alt="facebook" />
-						</a>
-						<a href="https://www.linkedin.com/" target="_blank" rel="noopener nofollow noreferrer">
-							<img src="images/linkedin.svg" alt="linkdein" />
-						</a>
-					</li>
-					<li>
-						<img src="images/martin-doe.jpg" alt="martin" />
-						<h3>Martin Doe</h3>
-						<p>UI Designer</p>
-						<a href="https://www.instagram.com" target="_blank" rel="noopener nofollow noreferrer">
-							<img src="images/instagram.svg" alt="instagram" />
-						</a>
-						<a href="https://twitter.com/" target="_blank" rel="noopener nofollow noreferrer">
-							<img src="images/twitter.svg" alt="twitter" />
-						</a>
-						<a href="https://facebook.com/" target="_blank" rel="noopener nofollow noreferrer">
-							<img src="images/facebook.svg" alt="facebook" />
-						</a>
-						<a href="https://www.linkedin.com/" target="_blank" rel="noopener nofollow noreferrer">
-							<img src="images/linkedin.svg" alt="linkdein" />
-						</a>
-					</li>
-				</ul>
+			<section class="section our-team">
+				<div class="container">
+					<h2 class="section-title">Наша команда</h2>
+					<ul class="container team">
+						<li>
+							<div class="box">
+								<img src="images/john-smith.jpg" alt="john" />
+								<h3 class="name">John Smith</h3>
+								<p class="job">Product Designer</p>
+								<div class="social-links">
+									<a href="https://www.instagram.com" target="_blank" rel="noopener nofollow noreferrer">
+										<img src="images/instagram.svg" alt="instagram" />
+									</a>
+									<a href="https://twitter.com/" target="_blank" rel="noopener nofollow noreferrer">
+										<img src="images/twitter.svg" alt="twitter" />
+									</a>
+									<a href="https://facebook.com/" target="_blank" rel="noopener nofollow noreferrer">
+										<img src="images/facebook.svg" alt="facebook" />
+									</a>
+									<a href="https://www.linkedin.com/" target="_blank" rel="noopener nofollow noreferrer">
+										<img src="images/linkedin.svg" alt="linkdein" />
+									</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="box">
+								<img src="images/marta-stewart.jpg" alt="marta" />
+								<h3 class="name">Marta Stewart</h3>
+								<p class="job">Frontend Developer</p>
+								<div class="social-links">
+									<a href="https://www.instagram.com" target="_blank" rel="noopener nofollow noreferrer">
+										<img src="images/instagram.svg" alt="instagram" />
+									</a>
+									<a href="https://twitter.com/" target="_blank" rel="noopener nofollow noreferrer">
+										<img src="images/twitter.svg" alt="twitter" />
+									</a>
+									<a href="https://facebook.com/" target="_blank" rel="noopener nofollow noreferrer">
+										<img src="images/facebook.svg" alt="facebook" />
+									</a>
+									<a href="https://www.linkedin.com/" target="_blank" rel="noopener nofollow noreferrer">
+										<img src="images/linkedin.svg" alt="linkdein" />
+									</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="box">
+								<img src="images/robert-jakis.jpg" alt="robert" />
+								<h3 class="name">Robert Jakis</h3>
+								<p class="job">Marketing</p>
+								<div class="social-links">
+									<a href="https://www.instagram.com" target="_blank" rel="noopener nofollow noreferrer">
+										<img src="images/instagram.svg" alt="instagram" />
+									</a>
+									<a href="https://twitter.com/" target="_blank" rel="noopener nofollow noreferrer">
+										<img src="images/twitter.svg" alt="twitter" />
+									</a>
+									<a href="https://facebook.com/" target="_blank" rel="noopener nofollow noreferrer">
+										<img src="images/facebook.svg" alt="facebook" />
+									</a>
+									<a href="https://www.linkedin.com/" target="_blank" rel="noopener nofollow noreferrer">
+										<img src="images/linkedin.svg" alt="linkdein" />
+									</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="box">
+								<img src="images/martin-doe.jpg" alt="martin" />
+								<h3 class="name">Martin Doe</h3>
+								<p class="job">UI Designer</p>
+								<div class="social-links">
+									<a href="https://www.instagram.com" target="_blank" rel="noopener nofollow noreferrer">
+										<img src="images/instagram.svg" alt="instagram" />
+									</a>
+									<a href="https://twitter.com/" target="_blank" rel="noopener nofollow noreferrer">
+										<img src="images/twitter.svg" alt="twitter" />
+									</a>
+									<a href="https://facebook.com/" target="_blank" rel="noopener nofollow noreferrer">
+										<img src="images/facebook.svg" alt="facebook" />
+									</a>
+									<a href="https://www.linkedin.com/" target="_blank" rel="noopener nofollow noreferrer">
+										<img src="images/linkedin.svg" alt="linkdein" />
+									</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
 			</section>
 			<!-- Конец Наша команда -->
 			<!-- Постоянные клиенты -->
-			<section>
-				<h2>Постоянные клиенты</h2>
-				<ul>
-					<li>
-						<a href="#"><img src="images/client-1.svg" alt="client-1" /></a>
-					</li>
-					<li>
-						<a href="#"><img src="images/client-2.svg" alt="client-2" /></a>
-					</li>
-					<li>
-						<a href="#"><img src="images/client-3.svg" alt="client-3" /></a>
-					</li>
-					<li>
-						<a href="#"><img src="images/client-4.svg" alt="client-4" /></a>
-					</li>
-					<li>
-						<a href="#"><img src="images/client-5.svg" alt="client-5" /></a>
-					</li>
-					<li>
-						<a href="#"><img src="images/client-6.svg" alt="client-6" /></a>
-					</li>
-				</ul>
+			<section class="section our-clients">
+				<div class="container">
+					<h2 class="section-title">Постоянные клиенты</h2>
+					<ul class="client-list">
+						<li>
+							<a href="#"><img src="images/client-1.svg" alt="client-1" /></a>
+						</li>
+						<li>
+							<a href="#"><img src="images/client-2.svg" alt="client-2" /></a>
+						</li>
+						<li>
+							<a href="#"><img src="images/client-3.svg" alt="client-3" /></a>
+						</li>
+						<li>
+							<a href="#"><img src="images/client-4.svg" alt="client-4" /></a>
+						</li>
+						<li>
+							<a href="#"><img src="images/client-5.svg" alt="client-5" /></a>
+						</li>
+						<li>
+							<a href="#"><img src="images/client-6.svg" alt="client-6" /></a>
+						</li>
+					</ul>
+				</div>
 			</section>
 			<!-- Конец постоянные клиенты -->
 		</main>
 		<!-- Подвал -->
 		<footer>
-			<a href="/"><img src="images/logo.svg" alt="logo" /></a>
-			<address>
-				г. Киев, пр-т Леси Украинки, 26
-				<br />
-				<a href="mailto:sclyarvlad@yandex.ru">sclyarvlad@yandex.ru</a>
-				<br />
-				<a href="tel:+380962553485">+38 096 255 34 85</a>
-				<p>ПРИСОЕДИНЯЙТЕСЬ</p>
-				<a href="https://www.instagram.com" target="_blank" rel="noopener nofollow noreferrer">
-					<img src="images/instagram.svg" alt="instagram" />
-				</a>
-				<a href="https://twitter.com" target="_blank" rel="noopener nofollow noreferrer">
-					<img src="images/twitter.svg" alt="twitter" />
-				</a>
-				<a href="https://facebook.com" target="_blank" rel="noopener nofollow noreferrer">
-					<img src="images/facebook.svg" alt="facebook" />
-				</a>
-				<a href="https://www.linkedin.com" target="_blank" rel="noopener nofollow noreferrer">
-					<img src="images/linkedin.svg" alt="linkdein" />
-				</a>
-			</address>
-			<p>2020 | Developed by GoIT Students</p>
+			<!-- Contacts -->
+			<section class="footer">
+				<div class="container footer-box">
+					<div class="footer-contacts">
+						<a href="/"><img src="images/logo.svg" alt="logo" /></a>
+						<address class="adress">
+							<ul>
+								<li class="item"><span class="city">г. Киев, пр-т Леси Украинки, 26</span></li>
+								<li class="item">
+									<a href="mailto:sclyarvlad@yandex.ru" class="footer-adress-link">sclyarvlad@yandex.ru</a>
+								</li>
+								<li class="item"><a href="tel:+380962553485" class="footer-adress-link">+380962553485</a></li>
+							</ul>
+						</address>
+					</div>
+					<!-- Social links -->
+					<div class="social-page">
+						<p class="footer-title">Присоединяйтесь</p>
+						<ul class="footer-social-links">
+							<li>
+								<a href="https://www.instagram.com" target="_blank" rel="noopener nofollow noreferrer">
+									<img src="images/instagram.svg" alt="instagram" />
+								</a>
+							</li>
+							<li>
+								<a href="https://twitter.com" target="_blank" rel="noopener nofollow noreferrer">
+									<img src="images/twitter.svg" alt="twitter" />
+								</a>
+							</li>
+							<li>
+								<a href="https://www.facebook.com" target="_blank" rel="noopener nofollow noreferrer">
+									<img src="images/facebook.svg" alt="facebook" />
+								</a>
+							</li>
+							<li>
+								<a href="https://www.linkedin.com" target="_blank" rel="noopener nofollow noreferrer">
+									<img src="images/linkedin.svg" alt="linkedin" />
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- follow -->
+					<div class="mailing">
+						<p class="footer-title">Подпишитесь на рассылку</p>
+					</div>
+				</div>
+				<p class="copyright">2020 | Developed by GoIT Students</p>
+			</section>
 		</footer>
 		<!-- Конец подвала -->
 	</body>

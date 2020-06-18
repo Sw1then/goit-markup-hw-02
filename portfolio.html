@@ -3,114 +3,184 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./style/style.css" />
+		<title>Portfolio</title>
 		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet" />
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet" />
-		<title>Portfolio</title>
+		<link rel="stylesheet" href="./style/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
+		/>
 	</head>
-	<body>
+	<body class="page">
 		<!-- Шапка сайта -->
 		<header>
 			<!-- Навигация -->
-			<nav>
-				<a href="/"><img class="logo-site" src="images/logo.svg" alt="logo" /></a>
-				<ul>
-					<li class="nav-studio"><a href="#">Студия</a></li>
-					<li class="nav-portfolio"><a href="#">Портфолио</a></li>
-					<li class="nav-contacts"><a href="#">Контакты</a></li>
-				</ul>
-				<address>
-					<img class="e-mail-svg" src="images/mail.svg" alt="mail" />
-					<a class="e-mail" href="mailto:sclyarvlad@yandex.ru">sclyarvlad@yandex.ru</a>
-					<img class="phone-svg" src="images/phone.svg" alt="phone" />
-					<a class="phone" href="tel:+380962553485">+38 096 255 34 85</a>
-				</address>
-			</nav>
+			<div class="container">
+				<nav class="main-nav">
+					<a href="/" class="logo"><img src="images/logo.svg" alt="logo" /></a>
+					<ul class="site-nav">
+						<li class="item">
+							<a href="https://www.league.com" class="link">Студия</a>
+						</li>
+						<li class="item">
+							<a href="./portfolio.html" class="link">Портфолио</a>
+						</li>
+						<li class="item">
+							<a href="https://www.league.com" class="link">Контакты</a>
+						</li>
+					</ul>
+					<address class="contact-nav">
+						<a href="mailto:sclyarvlad@yandex.ru" class="link">sclyarvlad@yandex.ru</a>
+						<a href="tel:+380962553485" class="link">+38 096 255 34 85</a>
+					</address>
+				</nav>
+			</div>
 		</header>
 		<!-- Конец шапки сайта -->
 		<!-- Конец навигации -->
 		<main>
-			<section>
+			<!-- Portfolio -->
+			<section class="container section portfolio">
 				<h1 class="hide-headers">Portfolio</h1>
-				<ul>
-					<li><a href="">Все</a></li>
-					<li><a href="">Веб-сайты</a></li>
-					<li><a href="">Приложения</a></li>
-					<li><a href="">Дизайн</a></li>
-					<li><a href="">Маркетинг</a></li>
+				<ul class="filter-butt">
+					<li>
+						<button type="button" class="button filter">Все</button>
+					</li>
+					<li>
+						<button type="button" class="button filter">Веб-сайты</button>
+					</li>
+					<li>
+						<button type="button" class="button filter">Приложения</button>
+					</li>
+					<li>
+						<button type="button" class="button filter">Дизайн</button>
+					</li>
+					<li>
+						<button type="button" class="button filter">Маркетинг</button>
+					</li>
 				</ul>
-				<ul>
+				<!-- Примеры работ -->
+				<ul class="work-list">
 					<li>
-						<img src="./images/portone.jpg" alt="one" />
-						<h2>Технокряк</h2>
-						<p>Веб-сайт</p>
+						<a href="">
+							<img src="./images/portone.jpg" alt="one" />
+							<p class="hide-item text-on-image">
+								Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для
+								цифрового шпионажа и атак на защищённые сервера конкурентов.
+							</p>
+							<h2 class="title">Технокряк</h2>
+							<p class="text">Веб-сайт</p>
+						</a>
 					</li>
 					<li>
-						<img src="./images/porttwo.jpg" alt="two" />
-						<h2>Постер New Orlean vs Golden Star</h2>
-						<p>Дизайн</p>
+						<a href="">
+							<img src="./images/porttwo.jpg" alt="two" />
+							<h2 class="title">Постер New Orlean vs Golden Star</h2>
+							<p class="text">Дизайн</p>
+						</a>
 					</li>
 					<li>
-						<img src="./images/portthree.jpg" alt="three" />
-						<h2>Ресторан Seafood</h2>
-						<p>Приложение</p>
+						<a href="">
+							<img src="./images/portthree.jpg" alt="three" />
+							<h2 class="title">Ресторан Seafood</h2>
+							<p class="text">Приложение</p>
+						</a>
 					</li>
 					<li>
-						<img src="./images/portfour.jpg" alt="four" />
-						<h2>Проект Prime</h2>
-						<p>Маркетинг</p>
+						<a href="">
+							<img src="./images/portfour.jpg" alt="four" />
+							<h2 class="title">Проект Prime</h2>
+							<p class="text">Маркетинг</p>
+						</a>
 					</li>
 					<li>
-						<img src="./images/portfive.jpg" alt="five" />
-						<h2>Проект Boxes</h2>
-						<p>Приложение</p>
+						<a href="">
+							<img src="./images/portfive.jpg" alt="five" />
+							<h2 class="title">Проект Boxes</h2>
+							<p class="text">Приложение</p>
+						</a>
 					</li>
 					<li>
-						<img src="./images/portsix.jpg" alt="six" />
-						<h2>Inspiration has no Borders</h2>
-						<p>Веб-сайт</p>
+						<a href="">
+							<img src="./images/portsix.jpg" alt="six" />
+							<h2 class="title">Inspiration has no Borders</h2>
+							<p class="text">Веб-сайт</p>
+						</a>
 					</li>
 					<li>
-						<img src="./images/portseven.jpg" alt="seven" />
-						<h2>Издание Limited Edition</h2>
-						<p>Дизайн</p>
+						<a href="">
+							<img src="./images/portseven.jpg" alt="seven" />
+							<h2 class="title">Издание Limited Edition</h2>
+							<p class="text">Дизайн</p>
+						</a>
 					</li>
 					<li>
-						<img src="./images/porteight.jpg" alt="eight" />
-						<h2>Проект LAB</h2>
-						<p>Маркетинг</p>
+						<a href="">
+							<img src="./images/porteight.jpg" alt="eight" />
+							<h2 class="title">Проект LAB</h2>
+							<p class="text">Маркетинг</p>
+						</a>
 					</li>
 					<li>
-						<img src="./images/portnine.jpg" alt="nine" />
-						<h2>Growing Business</h2>
-						<p>Приложение</p>
+						<a href="">
+							<img src="./images/portnine.jpg" alt="nine" />
+							<h2 class="title">Growing Business</h2>
+							<p class="text">Приложение</p>
+						</a>
 					</li>
 				</ul>
 			</section>
 		</main>
 		<footer>
-			<a href="/"><img src="images/logo.svg" alt="logo" /></a>
-			<address>
-				г. Киев, пр-т Леси Украинки, 26
-				<br />
-				<a href="mailto:sclyarvlad@yandex.ru">sclyarvlad@yandex.ru</a>
-				<br />
-				<a href="tel:+380962553485">+38 096 255 34 85</a>
-				<p>ПРИСОЕДИНЯЙТЕСЬ</p>
-				<a href="https://www.instagram.com" target="_blank" rel="noopener nofollow noreferrer">
-					<img src="images/instagram.svg" alt="instagram" />
-				</a>
-				<a href="https://twitter.com" target="_blank" rel="noopener nofollow noreferrer">
-					<img src="images/twitter.svg" alt="twitter" />
-				</a>
-				<a href="https://facebook.com" target="_blank" rel="noopener nofollow noreferrer">
-					<img src="images/facebook.svg" alt="facebook" />
-				</a>
-				<a href="https://www.linkedin.com" target="_blank" rel="noopener nofollow noreferrer">
-					<img src="images/linkedin.svg" alt="linkdein" />
-				</a>
-			</address>
-			<p>2020 | Developed by GoIT Students</p>
+			<!-- Contacts -->
+			<section class="footer">
+				<div class="container footer-box">
+					<div class="footer-contacts">
+						<a href="/"><img src="images/logo.svg" alt="logo" /></a>
+						<address class="adress">
+							<ul>
+								<li class="item"><span class="city">г. Киев, пр-т Леси Украинки, 26</span></li>
+								<li class="item">
+									<a href="mailto:sclyarvlad@yandex.ru" class="footer-adress-link">sclyarvlad@yandex.ru</a>
+								</li>
+								<li class="item"><a href="tel:+380962553485" class="footer-adress-link">+380962553485</a></li>
+							</ul>
+						</address>
+					</div>
+					<!-- Social links -->
+					<div class="social-page">
+						<p class="footer-title">Присоединяйтесь</p>
+						<ul class="footer-social-links">
+							<li>
+								<a href="https://www.instagram.com" target="_blank" rel="noopener nofollow noreferrer">
+									<img src="images/instagram.svg" alt="instagram" />
+								</a>
+							</li>
+							<li>
+								<a href="https://twitter.com" target="_blank" rel="noopener nofollow noreferrer">
+									<img src="images/twitter.svg" alt="twitter" />
+								</a>
+							</li>
+							<li>
+								<a href="https://www.facebook.com" target="_blank" rel="noopener nofollow noreferrer">
+									<img src="images/facebook.svg" alt="facebook" />
+								</a>
+							</li>
+							<li>
+								<a href="https://www.linkedin.com" target="_blank" rel="noopener nofollow noreferrer">
+									<img src="images/linkedin.svg" alt="linkedin" />
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- follow -->
+					<div class="mailing">
+						<p class="footer-title">Подпишитесь на рассылку</p>
+					</div>
+				</div>
+				<p class="copyright">2020 | Developed by GoIT Students</p>
+			</section>
 		</footer>
 	</body>
 </html>
